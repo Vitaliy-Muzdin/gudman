@@ -1,0 +1,38 @@
+body {
+    @include fluid-text(16, 14);
+
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-white);
+    overflow-x: hidden;
+}
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    @include fluid-text(96, 50)
+}
+h2 {
+    @include fluid-text(64, 37)
+}
+h3 {
+    @include fluid-text(40, 25)
+}
+h4 {
+    @include fluid-text(24, 16)
+}
+h2, h3, h4 {
+    font-family: var(--font-family-base-bold);
+}

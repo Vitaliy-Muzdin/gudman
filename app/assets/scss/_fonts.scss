@@ -1,0 +1,69 @@
+/**
+* Подключение шрифта GolosText
+*/
+@font-face {
+    font-family: 'GolosText-VF';
+    src: url('../fonts/golos-text/GolosTextVF/GolosText-VF.eot');
+    src: url('../fonts/golos-text/GolosTextVF/GolosText-VF.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/golos-text/GolosTextVF/GolosText-VF.woff2') format('woff2'),
+        url('../fonts/golos-text/GolosTextVF/GolosText-VF.woff') format('woff'),
+        url('../fonts/golos-text/GolosTextVF/GolosText-VF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GolosText-Regular';
+    src: url('../fonts/golos-text/GolosTextRegular/GolosText-Regular.eot');
+    src: url('../fonts/golos-text/GolosTextRegular/GolosText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/golos-text/GolosTextRegular/GolosText-Regular.woff2') format('woff2'),
+        url('../fonts/golos-text/GolosTextRegular/GolosText-Regular.woff') format('woff'),
+        url('../fonts/golos-text/GolosTextRegular/GolosText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GolosText-Medium';
+    src: url('../fonts/golos-text/GolosTextMedium/GolosText-Medium.eot');
+    src: url('../fonts/golos-text/GolosTextMedium/GolosText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/golos-text/GolosTextMedium/GolosText-Medium.woff2') format('woff2'),
+        url('../fonts/golos-text/GolosTextMedium/GolosText-Medium.woff') format('woff'),
+        url('../fonts/golos-text/GolosTextMedium/GolosText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GolosText-DemiBold';
+    src: url('../fonts/golos-text/GolosTextDemiBold/GolosText-DemiBold.eot');
+    src: url('../fonts/golos-text/GolosTextDemiBold/GolosText-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/golos-text/GolosTextDemiBold/GolosText-DemiBold.woff2') format('woff2'),
+        url('../fonts/golos-text/GolosTextDemiBold/GolosText-DemiBold.woff') format('woff'),
+        url('../fonts/golos-text/GolosTextDemiBold/GolosText-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GolosText-Bold';
+    src: url('../fonts/golos-text/GolosTextBold/GolosText-Bold.eot');
+    src: url('../fonts/golos-text/GolosTextBold/GolosText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/golos-text/GolosTextBold/GolosText-Bold.woff2') format('woff2'),
+        url('../fonts/golos-text/GolosTextBold/GolosText-Bold.woff') format('woff'),
+        url('../fonts/golos-text/GolosTextBold/GolosText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GolosText-Black';
+    src: url('../fonts/golos-text/GolosTextBlack/GolosText-Black.eot');
+    src: url('../fonts/golos-text/GolosTextBlack/GolosText-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/golos-text/GolosTextBlack/GolosText-Black.woff2') format('woff2'),
+        url('../fonts/golos-text/GolosTextBlack/GolosText-Black.woff') format('woff'),
+        url('../fonts/golos-text/GolosTextBlack/GolosText-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

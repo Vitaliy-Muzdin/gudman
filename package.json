@@ -1,0 +1,39 @@
+{
+  "name": "gudman",
+  "version": "1.0.0",
+  "description": "Тестовый сайт gudman",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitaliy-Muzdin/gudman.git"
+  },
+  "author": "gudman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vitaliy-Muzdin/gudman/issues"
+  },
+  "homepage": "https://github.com/Vitaliy-Muzdin/gudman#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "del": "^5.1.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-cli": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-image": "^6.3.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "imagemin-pngquant": "^10.0.0",
+    "vinyl-ftp": "^0.6.1"
+  }
+}

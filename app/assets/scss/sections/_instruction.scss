@@ -1,0 +1,221 @@
+.instruction {
+    padding: var(--section-padding-y-bottom);
+    background-color: var(--background-color-section);
+    @include tablet {
+        padding: 70px 0;
+    }
+    &__inner {}
+    &__title {
+        font-family: 'GolosText-DemiBold';
+        font-size: 64px;
+        color: var(--color-white);
+        text-align: center;
+        @include mobile {
+            font-size: 50px;
+        }
+        @include mobile-min {
+            font-size: 35px;
+        }
+    }
+    &__text {
+        font-family: "GolosText-Medium";
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--color-light-blue);
+        text-align: center;
+        margin: 32px auto 64px;
+        width: 100%;
+        max-width: 800px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @include tablet {
+            display: block;
+        }
+    }
+    &__item {
+        background-color: var(--color-main);
+        display: flex;
+        flex-direction: row;
+        @include mobile {
+            display: block;
+        }
+        &:first-child {
+            border-radius: 32px 0 0 32px;
+            @include tablet {
+                border-radius: 32px 32px 0 0;
+            }
+        }
+        &:last-child {
+            border-radius: 0 32px 32px 0;
+            @include tablet {
+                border-radius: 0 0 32px 32px;
+            }
+        }
+        &:last-child &-button {
+            border-radius: 0 32px 32px 0;
+            @include tablet {
+                border-radius: 0 0 32px 32px;
+            }
+        }
+        &-button {
+            @include reset-button;
+            cursor: pointer;
+            @include tablet {
+                width: 100%;
+            }
+            &-inner {
+                padding: 16px 10px;
+                text-align: center;
+                width: 80px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                @include tablet {
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+        &-number {
+            font-family: 'GolosText-Bold';
+            font-size: 96px;
+            line-height: 90%;
+            color: var(--color-white);
+            height: 100%;
+            width: 100%;
+            @include tablet {
+                font-size: 70px;
+                max-width: 80px;
+            }
+            @include mobile-min {
+                font-size: 35px;
+                max-width: 30px;
+                text-align: left;
+            }
+        }
+        &-name {
+            font-family: 'GolosText-Bold';
+            font-size: 24px;
+            line-height: 115%;
+            color: var(--color-white);
+            rotate: -90deg;
+            display: grid;
+            width: 100%;
+            height: 80px;
+            grid-auto-columns: max-content;
+            align-items: center;
+            @include tablet {
+                rotate: 0deg;
+                width: 100%;
+                height: auto;
+                grid-auto-columns: auto;
+            }
+        }
+        &-plus {
+            width: 100%;
+            height: 100px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            @include tablet {
+                height: auto;
+                max-width: 80px;
+            }
+            @include mobile-min {
+                max-width: 30px;
+                justify-content: right;
+            }
+            &-icon {
+                width: 22px;
+                height: 22px;
+                display: block;
+                &::before {
+                    content: '';
+                    clip-path: polygon(44% 0%, 56.14% 0%, 56.29% 43.86%, 100% 43.86%, 100% 56.29%, 56.14% 56.29%, 56.29% 100%, 44% 100%, 43.86% 56.29%, 0% 56.29%, 0% 44%, 43.86% 43.86%);
+                    background-color: var(--color-white);
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+        &-content {
+            padding: 0;
+            display: none;
+            &-inner {
+                padding: 32px;
+                @include mobile-min {
+                    padding: 25px 10px;
+                }
+            }
+        }
+        &-title {
+            font-family: 'GolosText-Medium';
+            font-size: 24px;
+            line-height: 130%;
+            color: var(--color-white);
+            margin-bottom: 24px;
+            height: 100%;
+        }
+        &-text {
+            font-size: 40px;
+            line-height: 120%;
+            color: var(--color-white);
+            padding-top: 350px;
+            @include tablet {
+                padding-top: 0;
+                font-size: 30px;
+            }
+            @include mobile {
+                font-size: 23px;
+            }
+        }
+        &-buttons {
+            padding: 6px 32px 8px;
+            background: var(--color-main);
+            border: 1.5px solid var(--color-light-blue);
+            border-radius: 40px;
+            font-size: 15px;
+            line-height: 150%;
+            color: var(--color-white);
+            margin: 24px 0 0;
+            cursor: pointer;
+            @include mobile-min {
+                padding: 5px 15px 7px;
+                font-size: 14px;
+            }
+        }
+        &_active > &-button {
+            display: none;
+        }
+        &_active > &-content {
+            display: block;
+        }
+        &:nth-child(1) &-button {
+            background-color: #74A7A0;
+            border-radius: 32px 0 0 32px;
+            @include tablet {
+                border-radius: 32px 32px 0 0;
+            }
+        }
+        &:nth-child(2) &-button {
+            background-color: #F3C3AF;
+        }
+        &:nth-child(3) &-button {
+            background-color: #F0AC87;
+        }
+        &:nth-child(4) &-button {
+            background-color: #FF8472;
+        }
+        &:nth-child(5) &-button {
+            background-color: #FF7260;
+        }
+        &:nth-child(6) &-button {
+            background-color: #F7624C;
+        }
+    }
+}

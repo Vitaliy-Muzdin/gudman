@@ -1,0 +1,329 @@
+.solve-problems {
+    padding: var(--section-padding-y-top);
+    background-color: var(--background-color-section);
+    @include tablet {
+        padding: 70px 0;
+    }
+    &__inner {}
+    &__title {
+        font-family: 'GolosText-DemiBold';
+        font-size: 64px;
+        color: var(--color-white);
+        @include mobile {
+            font-size: 50px;
+        }
+        @include mobile-min {
+            font-size: 35px;
+        }
+    }
+    &__content {
+        position: relative;
+    }
+    &__slides {
+        position: relative;
+    }
+    &__item {
+        @include abs-center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+        transition-duration: var(--transition-duration);
+        @include block-hidden;
+        width: 100%;
+        &_active {
+            @include block-visible;
+        }
+        &-top {
+            margin: 44px 0 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include mobile-min {
+                display: block;
+            }
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    }
+    &__tabs {
+        display: table;
+        width: 100%;
+        @include mobile-min {
+            margin-bottom: 30px;
+        }
+    }
+    &__tab {
+        display: inline-table;
+        margin: 4px 8px 4px 0;
+        &-button {
+            font-family: 'GolosText-Medium';
+            font-size: 12px;
+            text-align: center;
+            color: var(--color-main);
+            padding: 2.5px 16px 3.5px;
+            border: 1px solid var(--color-main);
+            border-radius: 40px;
+            background-color: transparent;
+            cursor: pointer;
+            @include hover {
+                background-color: var(--color-main);
+                color: var(--color-white);
+            }
+            &_active {
+                background-color: var(--color-main);
+                color: var(--color-white);
+            }
+        }
+    }
+    &__nav-slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        &-info {
+            font-family: 'GolosText-Medium';
+            font-size: 12px;
+            line-height: 150%;
+            color: var(--color-main);
+        }
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            &-left {
+                &::before {
+                    clip-path: polygon(38.57% 6.14%, 64% 6.14%, 33.43% 41.43%, 100% 41.29%, 100% 58%, 33.57% 58%, 64% 93.14%, 38.57% 93.14%, 0% 49.57%);
+                }
+            }
+            &-right {
+                &::before {
+                    clip-path: polygon(66.71% 41.43%, 36.14% 6.14%, 61.14% 6.14%, 100% 49.71%, 61.14% 93.14%, 35.86% 93.14%, 66.57% 58%, 0% 58%, 0% 41.29%);
+                }
+            }
+        }
+        &-button {
+            background-color: transparent;
+            border: 2px solid var(--color-main);
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            border-radius: 100%;
+            transition-duration: var(--transition-duration);
+            outline: none;
+            &::before {
+                content: '';
+                background-color: var(--color-white);
+                width: 12.74px;
+                height: 11.09px;
+                display: block;
+                margin: auto;
+            }
+            &_disabled {
+                background-color: var(--color-main);
+                opacity: 0.25;
+                cursor: auto;
+            }
+            @include hover {
+                background-color: var(--color-main);
+            }
+        }
+    }
+    &__heading {
+        @include background-image('../../assets/images/solve-problems/hypnopz.svg');
+        padding: 32px;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+            padding: 25px 15px;
+        }
+        &_flex-start {
+            flex-grow: 1;
+        }
+        &_flex-end {
+            margin-top: 100px;
+            @include mobile-min {
+                margin-top: 50px;
+            }
+        }
+        &-icon-block {
+            clip-path: polygon(11.91% 82.34%, 9.57% 79.43%, 7.72% 76.6%, 5.86% 73.43%, 4.38% 70.49%, 2.43% 65.6%, 0.86% 59.57%, 0% 54.52%, 0% 44.8%, 0.86% 40.14%, 2.21% 35.67%, 3.29% 32.57%, 4.71% 28.85%, 7% 24.71%, 9.73% 20.54%, 13% 16.71%, 16.36% 13%, 20% 10%, 23.8% 7.46%, 27.57% 5.14%, 31.41% 3.51%, 37.43% 1.57%, 44.59% 0%, 54.63% 0%, 59.91% 0.8%, 68% 3.25%, 71.74% 4.86%, 75.57% 7%, 79.77% 9.72%, 82.57% 12%, 85.29% 14.31%, 88.71% 18%, 91.6% 22%, 93.86% 26%, 96.11% 30.18%, 98.94% 38.67%, 100% 44.84%, 100% 54.75%, 99.14% 59.59%, 97.23% 66.63%, 95.2% 71.55%, 93.09% 75.48%, 91.34% 78.11%, 91.43% 91.14%, 77.97% 91.32%, 75.29% 93.14%, 72.03% 95%, 68.86% 96.43%, 65.54% 97.63%, 60.86% 99%, 55.51% 100%, 45.01% 100%, 39.71% 99%, 35.43% 97.86%, 32% 96.71%, 28.74% 95.29%, 25.43% 93.57%, 22.39% 91.8%, 18.57% 89%, 15.84% 86.51%, 13.71% 84.29%);
+            width: 160px;
+            height: 160px;
+            overflow: hidden;
+        }
+        &-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-title {
+            font-family: 'GolosText-Bold';
+            font-size: 40px;
+            color: var(--color-white);
+            margin-bottom: 32px;
+            line-height: 110%;
+            @include tablet {
+                font-size: 28px;
+            }
+        }
+        &-info {}
+    }
+    &__info {
+        background: #ADE5E4;
+        padding: 32px;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+            padding: 25px 15px;
+        }
+        &_flex-start {
+            flex-grow: 1;
+        }
+        &_flex-end {
+            margin-top: 125px;
+            @include mobile-min {
+                margin-top: 50px;
+            }
+        }
+        &-item {
+            &_grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+                @include tablet {
+                    grid-template-columns: 1fr;
+                }
+            }
+            &:nth-child(2) {
+                display: flex;
+                justify-content: space-between;
+                margin: 16px 0 32px;
+                @include tablet {
+                    display: block;
+                }
+                @include mobile-min {
+                    margin: 15px 0 25px;
+                }
+            }
+        }
+        &-elem {
+            &-title {
+                font-family: 'GolosText-Bold';
+                font-size: 40px;
+                line-height: 110%;
+                color: var(--color-main);
+                @include desktop {
+                    font-size: 35px;
+                }
+            }
+            &-text {
+                font-family: 'GolosText-Bold';
+                font-size: 12px;
+                line-height: 150%;
+                color: var(--color-main);
+            }
+        }
+        &-text {
+            font-family: 'GolosText-Medium';
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--color-main);
+            @include mobile-min {
+                font-size: 14px;
+            }
+        }
+        &-number {
+            font-family: 'GolosText-Medium';
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--color-main);
+            opacity: 0.5;
+        }
+        &-duty {
+            font-family: 'GolosText-Medium';
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--color-main);
+            @include mobile-min {
+                font-size: 14px;
+            }
+            &_bold {
+                font-family: 'GolosText-Bold';
+                font-size: 18px;
+                line-height: 140%;
+                @include mobile-min {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-check {
+            margin-bottom: 10px;
+            &-link {
+                position: relative;
+                font-family: 'GolosText-Medium';
+                font-size: 14px;
+                line-height: 140%;
+                color: var(--color-main);
+                &::after {
+                    content: '';
+                    @include abs-x-center;
+                    width: 25%;
+                    height: 1px;
+                    background-color: var(--color-main);
+                    transition-duration: var(--transition-duration);
+                    display: block;
+                    opacity: 0;
+                }
+                @include hover {
+                    &::after {
+                        width: 100%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &-more {
+            &-link {
+                position: relative;
+                font-family: "GolosText-Medium";
+                font-size: 14px;
+                line-height: 140%;
+                color: var(--color-main);
+                @include reset-button;
+                cursor: pointer;
+                &::after {
+                    content: '';
+                    @include abs-x-center;
+                    width: 25%;
+                    height: 1px;
+                    background-color: var(--color-main);
+                    transition-duration: var(--transition-duration);
+                    display: block;
+                    opacity: 0;
+                }
+                @include hover {
+                    &::after {
+                        width: 100%;
+                        opacity: 1;
+                    }
+                }
+            }
+            &-info {
+                font-family: 'GolosText-Medium';
+                font-size: 14px;
+                line-height: 140%;
+                color: var(--color-main);
+                background: transparent;
+                border: 0;
+                outline: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+

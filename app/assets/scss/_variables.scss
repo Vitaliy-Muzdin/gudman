@@ -1,0 +1,21 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-white-05: rgba(255, 255, 255, .5);
+    --color-white-0: rgba(255, 255, 255, 0);
+    --color-main: #1C5564;
+    --color-light-blue: #ade5e4;
+    
+    --background-color-section: #001824;
+    
+    --font-family-base: 'GolosText-VF';
+    --font-family-base-bold: 'GolosText-Bold';
+    
+    --container-width: 1342px;
+    --container-padding-x: 15px;
+
+    --section-padding-y: 96px 0;
+    --section-padding-y-top: 128px 0 96px;
+    --section-padding-y-bottom: 96px 0 128px;
+
+    --transition-duration: .5s;
+}
