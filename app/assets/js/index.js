@@ -21,16 +21,6 @@ function increaseFunc() {
     });
 }
 increaseFunc();
-document.addEventListener('scroll', function(e) {
-    let numbersPosition = numbers.getBoundingClientRect();
-    let numbersPositionTop = numbersPosition.y;
-    let innerHeight = window.innerHeight;
-    let limit = numbersPositionTop < innerHeight;
-    if(numbersPositionTop < innerHeight) {
-        if( limit == increase.length ){ return; }
-    }
-});
-
 
 const slider = document.getElementById('slider');
 const slides = document.getElementById('slides');
